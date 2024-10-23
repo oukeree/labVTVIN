@@ -1,0 +1,28 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;    
+}
+.reg{
+    width: 320px;
+    padding: 15px;
+    margin: 15px;
+    background-color: #fff;
+    border: 1px solid blue;
+    display: flex;
+    flex-direction: column;
+}
+
+input{
+    margin: 5px;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.regbutton{
+    background-color: #1cbc11;
+    color: white;
+}
+.regbutton:hover{
+    background-color: #14a20a;
+}
