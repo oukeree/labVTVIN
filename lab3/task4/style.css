@@ -10,10 +10,11 @@ header{
     width: 100%;
     position: fixed;
     padding: 10px;
+    top: 0;
 }
 section{
     border: 1px solid;
-    margin: 50px 30px;
+    margin: 100px 30px;
     padding: 25px 15px;
     /*margin-top: 5%;
     margin-bottom: 5%;
