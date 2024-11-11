@@ -1,0 +1,132 @@
+.background {
+    width: 270px;
+    height: 270px;
+    background: #CFDEE6;
+    border-radius: 50%;
+    margin: 50px auto 0;
+    position: relative;  
+}
+
+.tower {
+    width: 36px;
+    height: 96px;
+    background: white;
+    position: absolute;
+    bottom: 84px;
+    left: 66px;
+}
+
+.tower::before {
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 18px solid transparent;
+    border-right: 18px solid transparent;
+    border-bottom: 24px solid #D56851;
+    position: absolute;
+    top: -24px;
+    z-index: 1;
+}
+
+.tower::after {
+    content: "";
+    width: 12px;
+    height: 15px;
+    background: #696565;
+    position: absolute;
+    top: 12px;
+    left: 12px;
+}
+
+.house {
+    width: 126px;
+    height: 36px;
+    background: white;
+    position: absolute;
+    left: 9px;
+    bottom: 0px;
+}
+
+.house::before {
+    content: "";
+    width: 110px;
+    height: 0;
+    border-bottom: 15px solid #D56851;
+    border-right: 16px solid transparent;
+    position: absolute;
+    top: -15px;
+}
+
+.house::after {
+    content: "";
+    width: 83px;
+    height: 21px;
+    background: #D56851;
+    position: absolute;
+    top: -36px;
+    left: 27px;
+}
+
+.windows {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.window {
+    display: inline-block;
+    background-color: #696565;
+    width: 12px;
+    height: 18px;
+    margin: 2px;
+}
+
+.cloud {
+    background-color: white;
+    position: absolute;
+    border-radius: 40px 40px 0 0;
+    width: 40px;
+    height: 12px;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.cloud::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 8px;
+    background: white;
+    border-radius: 40px 40px 0 0;
+    left: 15px;
+    top: -5px;
+}
+
+#cloud-1 {
+    top: 60px;
+    animation: move-1 7s linear infinite;
+}
+
+#cloud-2 {
+    top: 60px;
+    animation: move-2 6s linear infinite;
+}
+
+#cloud-3 {
+    top: 10px;
+    animation: move-3 8s linear infinite;
+}
+
+@keyframes move-1 {
+    from {left: -200px;}
+    to {left: 600px;}
+}
+
+@keyframes move-2 {
+    from {left: -100px;}
+    to {left: 640px;}
+}
+
+@keyframes move-3 {
+    from {left: -180px;}
+    to {left: 640px;}
+}

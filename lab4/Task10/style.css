@@ -1,0 +1,7 @@
+.columns{
+    display: inline;
+}
+
+#column{
+    columns: 3;
+}

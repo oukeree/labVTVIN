@@ -1,0 +1,39 @@
+#grayscale{
+    filter: grayscale();
+}
+
+#sepia{
+    filter: sepia();
+}
+
+#saturate{
+    filter: saturate(300%);
+}
+
+#huerotate{
+    filter: hue-rotate(300deg);
+}
+
+#invert{
+    filter: invert();
+}
+
+#contrast{
+    filter: contrast(300%);
+}
+
+img{
+    height: 250px;
+    margin: 2px;
+}
+
+.flex{
+    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+div{
+    margin: 10px;
+}

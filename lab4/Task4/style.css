@@ -1,0 +1,12 @@
+.text{
+    text-overflow: ellipsis;
+    border: 1px solid;
+    width: 30%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.text:hover{
+    overflow: visible;
+    white-space: normal;
+}

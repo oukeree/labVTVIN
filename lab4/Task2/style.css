@@ -1,0 +1,18 @@
+textarea{
+    resize: none;
+}
+#pointer{
+    cursor: pointer;
+}
+
+#progress{
+    cursor: progress;
+}
+
+#wait{
+    cursor: wait;
+}
+
+#pickaxe{
+    cursor: url(pickaxe.cur), auto;
+}

@@ -1,0 +1,49 @@
+*{
+    margin: 5px;
+}
+
+.flex{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#grad1{
+    width: 250px;
+    height: 250px;
+    background: linear-gradient(#d4c340, white);
+    border: 1px solid;
+    box-sizing: border-box;
+}
+
+#grad2{
+    width: 250px;
+    height: 250px;
+    background: linear-gradient(to right, #d4c340, white) ;
+    border: 1px solid;
+    box-sizing: border-box;
+}
+
+#grad3{
+    width: 250px;
+    height: 250px;
+    background: linear-gradient(to left, #d4c340, white) ;
+    border: 1px solid;
+    box-sizing: border-box;
+}
+
+#grad4{
+    width: 350px;
+    height: 250px;
+    background: linear-gradient(to bottom, red 33%, white 33% 66%, red 66%  ) ;
+    border: 1px solid;
+    box-sizing: border-box;
+}
+
+#grad5{
+    width: 350px;
+    height: 250px;
+    background: linear-gradient(to right, red 1%, blue 70%, white 90%, red 100%   ) ;
+    border: 1px solid;
+    box-sizing: border-box;
+}

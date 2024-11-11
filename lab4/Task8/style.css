@@ -1,0 +1,24 @@
+.b1{
+   font-size: small;
+}
+
+.b2{
+    font-size: medium;
+}
+
+.b3{
+    font-size: large;
+}
+
+button{
+    border-radius: 1em;
+    border: 0px;
+    background-color: darkgray;
+    box-shadow: 1em 1em 5em gray, -1em -1em 5em gray;
+    padding: 1em;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}

@@ -1,0 +1,41 @@
+*{
+    margin: 5px;
+}
+
+.flex{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#grad1{
+    width: 250px;
+    height: 250px;
+    background: radial-gradient(rgb(167, 222, 250),#167193 );
+    border: 1px solid;
+    box-sizing: border-box;
+}
+
+#grad2{
+    width: 400px;
+    height: 250px;
+    background: radial-gradient(ellipse,rgb(167, 222, 250),#167193 );
+    border: 1px solid;
+    box-sizing: border-box;
+}
+
+#grad3{
+    width: 400px;
+    height: 250px;
+    background: radial-gradient(circle closest-corner at 20px 30px , rgb(167, 222, 250) 5%,#167193 100%   );
+    border: 1px solid;
+    box-sizing: border-box;
+}
+
+#grad4{
+    width: 400px;
+    height: 250px;
+    background: radial-gradient(circle, black 5%, white 15% 25%,green 30%    );
+    border: 1px solid;
+    box-sizing: border-box;
+}  
