@@ -33,7 +33,7 @@ main{
 }
 
 nav{
-    background-color: green;
+    background-color: blue;
 }
 
 nav a{
@@ -107,7 +107,7 @@ nav a{
 }
 
 footer{
-    background-color: green;
+    background-color: blue;
     margin-bottom: 20px;
     height: 20%;
 }
