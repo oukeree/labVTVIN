@@ -4,6 +4,9 @@
     grid-template-rows: repeat(3,minmax(60px, 1fr));
     gap: 5px;
 }
+p{
+    margin: 5px;
+}
 .container div{  
     border: 1px solid;
 }

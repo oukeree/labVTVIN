@@ -7,11 +7,11 @@
 }
 
 #saturate{
-    filter: saturate(300%);
+    filter: saturate(50%);
 }
 
 #huerotate{
-    filter: hue-rotate(300deg);
+    filter: hue-rotate(100deg);
 }
 
 #invert{
@@ -19,7 +19,7 @@
 }
 
 #contrast{
-    filter: contrast(300%);
+    filter: contrast(50%);
 }
 
 img{

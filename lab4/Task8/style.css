@@ -14,7 +14,7 @@ button{
     border-radius: 1em;
     border: 0px;
     background-color: darkgray;
-    box-shadow: 1em 1em 5em gray, -1em -1em 5em gray;
+    box-shadow: 0 0 1em gray;  
     padding: 1em;
 }
 

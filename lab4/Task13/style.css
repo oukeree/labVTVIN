@@ -1,17 +1,9 @@
 .grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 50px 1fr;
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-    }
-    
-    .div1 { grid-area: 1 / 1 / 2 / 4; }
-    .div2 { grid-area: 2 / 1 / 3 / 2; }
-    .div3 { grid-area: 2 / 2 / 3 / 3; }
-    .div4 { grid-area: 2 / 3 / 3 / 4; }
+}
 
-.flex{
+.card{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -24,30 +16,31 @@ h1{
     text-align: center;
 }
 
-.div2,.div3,.div4{
+.card{
     background-color: rgb(234, 171, 171) ;
     margin: 10px;
     text-align: center;
 }
 
 p{
-    font-size: 12px;
+    margin: 10px;
+    font-size: 16px;
 }
 
-.kv1,.kv2,.kv3{
+.button{
     margin: 10px;
     height: 50px;
 
 }
 
-.kv1{
+#button1{
     background-color: rgb(238, 8, 238);
 }
 
-.kv2{
+#button2{
     background-color: lightskyblue;
 }
 
-.kv3{
+#button3{
     background-color: greenyellow;
 }
