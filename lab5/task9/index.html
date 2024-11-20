@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let url = prompt("Enter url");
+        function isCorrect(url){
+            if(url.substr(0,7) === 'http://' && url.substr(-5, 5) === '.html') return true;
+            else return false;
+        };
+        alert(isCorrect(url));
+    </script>
+</body>
+</html>
