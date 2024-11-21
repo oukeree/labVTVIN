@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            background-color: lightblue; 
+            color: aliceblue; 
+            border: 0; 
+            height: 30px; 
+            margin-top: 20px;
+        }
+        button:hover{
+            background-color: darkblue;
+        }
+        button:focus{
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <p><b>Прогресс-бар</b></p>
+    <progress value="0.00"></progress> <span id="max"></span>
+    <div>
+        <button onclick="increaseValue()"><b>Увеличить значение</b></button>
+    </div>
+    <script>
+        let progress = document.querySelector('progress');
+        let text = document.getElementById('max');
+        function increaseValue(){
+            if(progress.value == 1) return;
+            progress.value += 0.05;
+            if(progress.value == 1){
+                text.innerHTML = '100% Максимум'
+                return;
+            } else {
+                text.innerHTML = Math.round(progress.value*100) + '%';
+            }
+        }
+        
+    </script>
+</body>
+</html>

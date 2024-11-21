@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="num1"> + <input type="text" id="num2"> = <span class="answer">?</span>
+    <div style="margin-top: 10px"><button onclick="calc()">Вычислить</button></div>
+    <script>
+        function calc(){
+            let a = document.getElementById('num1');
+            let b = document.getElementById('num2');
+            let answer = document.querySelector('.answer');
+            answer.innerHTML = (+a.value)+(+b.value);
+        }
+    </script>
+</body>
+</html>
