@@ -1,4 +1,4 @@
-let name = "Artem";
-for (let ch in name){
-    alert(name[ch]);
+let userName = "Artem";
+for (let i = 0; i < userName.length; i++){
+    alert(userName[i]);
 }

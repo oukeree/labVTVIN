@@ -1,6 +1,6 @@
 let num = '12345';
 let result = 1;
-for(let ch in num){
-    result *= num[ch];
+for(let i = 0; i < num.length; i++){
+    result *= num[i];
 }
 alert(result);
