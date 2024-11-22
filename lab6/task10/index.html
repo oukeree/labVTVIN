@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="ship">
+        <div id="main">Отправить в работу</div>
+        <div id="sails">
+            <div id="sail1"></div>
+            <div id="mast"></div>
+            <div id="sail2"></div>
+        </div>
+    </div>
+    <script>
+        let ship = document.getElementById('ship');
+        let main = document.getElementById('main');
+        let sails = document.getElementById('sails');
+        let sail1 = document.getElementById('sail1');
+        let sail2 = document.getElementById('sail2');
+        let mast = document.getElementById('mast');
+        function update(){
+            main.style.borderRadius = '15px 15px 100px 100px';
+            sails.style.transform = 'rotate(0deg)';
+            sail1.style.transform = 'scaleY(1)';
+            sail2.style.transform = 'scaleY(1)';
+        }
+        function prepare(){
+            main.style.animation = 'prepare 1.5s'; 
+            sails.style.animation = 'up 1.5s';
+            sail1.style.animation = 'sailup 1.5s';
+            sail2.style.animation = 'sailup 1.5s';
+            setTimeout(update(), 1500);
+        }
+        function go(){
+            ship.style.animation = 'go 10s';
+        }
+        function newPosition(){
+            ship.style.transform = 'translateX(1920px)';
+        }
+        main.addEventListener('click', function(){
+            main.innerHTML = 'Поплыли!';
+            prepare();
+            let timer = setTimeout(go, 1500);
+            setTimeout(newPosition, 10000);
+        })
+    </script>
+
+</body>
+</html>

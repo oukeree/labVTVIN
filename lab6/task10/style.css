@@ -1,0 +1,80 @@
+body{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #acb8e2;
+    padding: 0;
+    margin: 0;
+}
+
+#ship{
+    position: relative;
+    top: 200px;
+    left: 30px;
+    transform: translateX(0px);
+}
+
+@keyframes go{
+    from{transform: translateX(0px);}
+    to{transform: translateX(1920px);}
+}
+
+#main{
+    background-color: #6464c8;
+    width: 300px;
+    height: 130px;
+    border-radius: 15px;
+    position: absolute;
+    display: flex;
+    z-index: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes prepare {
+    from{border-radius: 15px;}
+    to{border-radius: 15px 15px 100px 100px;}
+}
+
+#sails{
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    width: 208px;
+    position: relative;
+    top: -180px;
+    left: 60px;
+    transform-origin: 133px 180px;
+    transform: rotate(-90deg);
+}
+
+@keyframes up {
+    from{transform: rotate(-90deg);}
+    to{transform: rotate(0deg);}
+}
+
+#mast{
+    background-color: #6464c8;
+    height: 190px;
+    width: 18px;
+}
+
+#sail1, #sail2{
+    border-bottom: 170px solid white;
+    transform-origin: bottom;
+    transform: scaleY(0);
+}
+
+@keyframes sailup {
+    from{transform: scaleY(0);}
+    to{transform: scaleY(1);}
+}
+
+#sail1{
+    border-left: 110px solid transparent;
+    border-right: 0px solid white;
+}
+
+#sail2{
+    border-left: 0px solid white;
+    border-right: 70px solid transparent;
+}

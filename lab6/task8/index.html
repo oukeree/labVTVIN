@@ -33,8 +33,7 @@
             if(progress.value == 1) return;
             progress.value += 0.05;
             if(progress.value == 1){
-                text.innerHTML = '100% Максимум'
-                return;
+                text.innerHTML = '100% Максимум';
             } else {
                 text.innerHTML = Math.round(progress.value*100) + '%';
             }
