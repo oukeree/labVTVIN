@@ -114,3 +114,7 @@ header{
     font-size: 18px;
     color: #FF7055;
 }
+
+#searchform input:focus{
+    outline: 2px solid #0F595E;
+}
