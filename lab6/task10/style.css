@@ -18,7 +18,7 @@ body{
     to{transform: translateX(1920px);}
 }
 
-#main{
+#bottom{
     background-color: #6464c8;
     width: 300px;
     height: 130px;
