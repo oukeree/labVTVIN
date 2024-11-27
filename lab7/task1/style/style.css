@@ -6,15 +6,19 @@
 }
 
 @font-face {
-    font-family: 'AlbertusNova';
-    src: url('source/albertusnova_bold.otf') format('otf');
+    font-family: "AlbertusNova";
+    src: url(albertusnova_bold.otf);
 }
 
 @font-face {
     font-family: 'AlbertusNovaLight';
-    src: url('source/ofont.ru_Uncage.otf') format('otf');
+    src: url(albertusnovalight.otf);
 }
 
+@font-face {
+    font-family: 'AlbertusNovaThin';
+    src: url(albertusnovathin.otf);
+}
 
 ul{
     list-style: none;
@@ -25,11 +29,16 @@ a{
     outline: none;
 }
 
+body::-webkit-scrollbar {
+    display: none;
+}
+  
 body{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
     line-height: 1;
     background: #20212B;
+    
 }
 
 /* header */
@@ -50,6 +59,7 @@ header::after, .container::after, .footer::after{
 header{
     width: 100%;
     background: #20212B;
+    /* background: black; */
     box-shadow: 3px 3px 1px rgba(0,0,0,.05);
     position: relative;
     padding: 15px 0;
@@ -78,12 +88,15 @@ header{
 }
 
 #menu a{
+    font-family: 'AlbertusNovaLight';
     color: #E75654;
     text-transform: uppercase;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
     font-weight: 600;
     display: block;
     line-height: 40px;
+    
+    text-shadow: 0px 0px 20px #000;
 }
 
 #menu a:hover{
@@ -113,6 +126,7 @@ header{
     height: 40px;
     font-size: 16px;
     font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
     color: white;
 }
 
@@ -177,9 +191,6 @@ header{
 
 /* main */
 
-.main{
-    
-}
 
 .banner img{
     position: absolute;
@@ -189,8 +200,8 @@ header{
 }
 
 .banner p{
+    font-family: "AlbertusNova";
     margin-left: 50px;
-    font-family: 'Albertus Nova', serif;
     font-size: 60px;
     line-height: 113%;
     letter-spacing: 5px;
@@ -210,14 +221,18 @@ header{
     width: 400px;
     height: 130px;
     border: 5px solid darkgray;
-    border-radius: 5px;
+    border-radius: 8px;
+}
+
+#playbutton:hover{
+    border: 5px solid white;
 }
 
 #playbutton a{
-    margin-top: 30px;
+    margin-top: 20px;
     display: grid;
     justify-content: center;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'AlbertusNovaLight';
     font-size: 50px;
     letter-spacing: 5px;
     font-weight: 600;
@@ -228,7 +243,7 @@ header{
 #playbutton p{
     padding-top: 15px;
     padding-left: 40px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'AlbertusNovaThin';
     font-size: 15px;
     letter-spacing: 2px;
     font-weight: 600;
@@ -247,6 +262,30 @@ header{
     justify-items: center;
 }
 
+#aboutgame h1{
+    /* position: ab; */
+    font-family: 'AlbertusNova';
+    /* font-family: ''; */
+    text-align: center;
+    margin: 5px;
+    padding: 50px;
+    font-size: 100px;
+    letter-spacing: 0px;
+    line-height: 85%;
+    text-transform: uppercase;
+    /* font-weight: 600; */
+    /* color: #E75654; */
+    color: white;
+    text-shadow: 0px 0px 20px #000; 
+}
+#aboutgame h1 span{
+    /* color: #ababaa; */
+    color: #E2DACE90;
+    /* color: #E75654; */
+    font-size: 60px;
+    margin-bottom: 0;
+}
+
 #aboutgame p{
     
     /* font-family: "Radiance", "Noto Sans", sans-serif; */
@@ -255,9 +294,10 @@ header{
     text-align: center;
     margin: 5px;
     padding: 50px;
-    font-size: 55px;
+    padding-top: 0;
+    font-size: 30px;
     letter-spacing: 0px;
-    line-height: 105%;
+    line-height: 115%;
     /* font-weight: 600; */
     color: white;
     text-shadow: 0px 0px 20px #000; 
@@ -269,8 +309,8 @@ header{
 #heroes h1{
     text-align: center;
     margin-left: 50px;
-    font-family: 'Albertus Nova', serif;
-    font-size: 60px;
+    font-family: 'AlbertusNova';
+    font-size: 75px;
     line-height: 113%;
     letter-spacing: 4px;
     font-weight: 600;
@@ -294,21 +334,195 @@ header{
     box-shadow: 0px 0px 20px #000;
 }
 .flexblock p{
+    font-family: 'AlbertusNovaLight';
     text-align: left;
     margin: 5px;
     padding-top: 100px;
     padding-left: 30px;
+    font-size: 30px;
+    letter-spacing: 1px;
+    line-height: 115%;
+    font-weight: 100;
+    color: #f4f4ef;
+    text-shadow: 0px 0px 20px #000;
+}
+
+#news{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+#newstitle{
+    font-family: 'AlbertusNova';
+    /* font-family: ''; */
+    text-align: center;
+    margin: 5px;
+    padding: 50px;
+    font-size: 100px;
+    letter-spacing: 0px;
+    line-height: 85%;
+    text-transform: uppercase;
+    /* font-weight: 600; */
+    /* color: #E75654; */
+    color: white;
+    text-shadow: 0px 0px 20px #000; 
+}
+
+#new1 img{
+    width: 350px;
+    height: 200px;
+    margin: 23px;
+    border: 2px solid #E75654;
+    box-shadow: 0px 0px 20px #000;
+}
+
+
+#new1{
+    background-color: #813B3F;
+    margin-right: 50px;
+    height: 320px;
+    width: 400px;
+    border: 3px solid #1E202A;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px #000;
+    cursor: pointer;
+}
+
+#new1:hover{
+    border: 3px solid darkgray;
+    border-radius: 8px;
+}
+
+#new2:hover{
+    border: 3px solid darkgray;
+    border-radius: 8px;
+}
+#new1 p{
+    font-family: 'AlbertusNovaLight';
+    text-align: center;
+    margin: 5px;
+    /* padding-top: 100px;
+    padding-left: 30px; */
+    font-size: 30px;
+    letter-spacing: 1px;
+    line-height: 115%;
+    font-weight: 100;
+    color: #f4f4ef;
+    text-shadow: 0px 0px 20px #000;
+}
+#new1 p span{
+    font-style: 'AlbertusNova';
+}
+#new2 p span{
+    font-style: 'AlbertusNova';
+}
+#new2 p{
+    font-family: 'AlbertusNovaLight';
+    text-align: center;
+    margin: 5px;
+    /* padding-top: 100px; */
+    /* padding-left: 30px; */
     font-size: 25px;
     letter-spacing: 1px;
     line-height: 115%;
     font-weight: 100;
-    color: #cec9c9ee;
+    color: #f4f4ef;
     text-shadow: 0px 0px 20px #000;
+}
+#new2{
+    background-color: #813B3F;
+    margin-left: 50px;
+    height: 320px;
+    width: 400px;
+    
+    border: 3px solid #1E202A;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px #000;
+    cursor: pointer;
+}
+#new2 img{
+    width: 350px;
+    height: 200px;
+    margin: 23px;
+    border: 2px solid #E75654;
+    box-shadow: 0px 0px 20px #000;
+}
+
+/* footer */
+
+
+footer{
+    margin-top: 50px;
+    height: 100px;
+    background-color: black;
+}
+
+.copyright{
+    color: gray;
+    text-align: center;
+    padding-top: 15px;
+}
+#logovalve{
+    max-height: 30px;
+    margin: 15px;
+}
+
+#logodota{
+    max-height: 30px;
+    margin: 15px;
+}
+
+#logos{
+    display: flex;
+    justify-content: center;
+
 }
 
 /* media */
 
 @media (max-width: 768px) {
+    #news{
+        /* margin-top: 50px; */
+        display: block;
+        /* justify-content: center; */
+    }
+    #newstitle{
+        font-size: 75px;
+        margin: 50px 0;
+        padding: 10px 0;
+    }
+    #new1{
+        margin-left: 50px;
+        margin-bottom: 50px;
+    }
+    #aboutgame h1{
+        text-wrap: nowrap;
+        font-size: 45px;
+        padding-bottom: 35px;
+        padding-top: 45px;
+    }
+    #aboutgame h1 span{
+        font-size: 30px;
+    }
+    #aboutgame p{
+        margin-top: 5px;
+        font-size: 20px;
+        
+        padding-bottom: 40px;
+        margin: 0;
+    }
+    #heroes h1{
+        font-size: 45px;
+        padding: 0;
+        margin: 0;
+        padding-top: 35px;
+        padding-bottom: 35px;
+    }
+    .flexblock p{
+        font-size: 25px;
+        margin-top: 0;
+        padding-top: 30px;
+    }
     .flexblock{
         display: block;
     }
@@ -357,5 +571,8 @@ header{
         text-align: center;
         border-bottom: 1px solid #2C3E50;
         margin-right: 0;
+    }
+    #menu a:hover{
+        color: black;
     }
 }

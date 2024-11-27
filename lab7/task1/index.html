@@ -3,37 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/fontawesome.min.css" integrity="sha512-P9vJUXK+LyvAzj8otTOKzdfF1F3UYVl13+F8Fof8/2QNb8Twd6Vb+VD52I7+87tex9UXxnzPgWA3rH96RExA7A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/fontawesome.min.css"> -->
+    <meta name="author" content="Valve">
+    <meta name="description" content="Каждый день миллионы игроков по всему миру вступают в командную битву 5 на 5 в роли одного из более чем сотни героев. Dota — глубочайшая многопользовательская стратегия всех времён, в которой всегда найдётся место новой стратегии или тактике. Она совершенно бесплатна, и это не поменяется — начинайте защищать своего Древнего уже сейчас.">
+    <meta name="keywords" content="Dota, Дота, Скачать дота, Герои дота, Персонажи дота, Дота играть, дота купить, valve, steam, dota download, dota heroes, dota play">
+    <title>Dota 2</title>
     <link rel="stylesheet" href="style/style.css">
+    <link type="image/x-icon" href="source/falvicon.png" rel="icon">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 <body>
     <header>
         <nav class="container">
             <a class="logo" href="index.html" title="На главную">
-                <img src="source/icon.png">
+                <img src="source/icon.png" alt="icon">
             </a>
             <div class="nav-toggle"><span></span></div>
-            <form action="" method="get" id="searchform">
+            <form action="#" method="get" id="searchform">
                 <input type="text" placeholder="Search...">
                 <!-- <button type="submit"></button> -->
             </form>
             <ul id="menu">
-                <li><a href="">О игре</a></li>
-                <li><a href="">Новости</a></li>
-                <li><a href="">Как играть</a></li>
+                <li><a href="#aboutgame">О игре</a></li>
+                <li><a href="#heroes">Герои</a></li>
+                <li><a href="#news">Новости</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <div class="banner">
-            <img src="source/dota-2-banner.jpg">
+            <img src="source/dota-2-banner.jpg" alt="banner">
             <p>«Современный многопользовательский шедевр»</p>
-            <div id="playbutton"><a>Play now</a><p>Download in steam</p></div>
+            <div id="playbutton"><a href="https://store.steampowered.com/app/570/Dota_2/">Play now</a><p>Download on steam</p></div>
         </div>
         <div id="aboutgame">
+            <h1><span>Присоединитесь к </span><br>битве Древних</h1>
             <p>Каждый день миллионы игроков по всему миру вступают в командную битву 5 на 5 в роли одного из более чем сотни героев.
             Dota — глубочайшая многопользовательская стратегия всех времён, в которой всегда найдётся место новой стратегии или тактике.
             Она совершенно бесплатна, и это не поменяется — начинайте защищать своего Древнего уже сейчас.</p>
@@ -45,12 +48,35 @@
                     Список героев в Dota 2 огромен и безгранично разнообразен: здесь вы встретите и магов-тактиков, и свирепых громил, 
                     и хитроумных негодяев. Их невероятные способности и сокрушительные ульты непременно приведут вас к победе.
                 </p>
-                <img src="source/spirits.png">
+                <img src="source/spirits.png" alt="spirits">
+            </div>
+        </div>
+        <h1 id="newstitle">Новости</h1>    
+        <div id="news">
+            <div id="new1">
+                <img src="source/kez.jpeg" alt="kez">
+                <p>Новый герой - <span>KEZ</span></p>
+            </div>
+            <div id="new2">
+                <img src="source/ringmaster.jpeg" alt="ringmaster">
+                <p>Новый герой - RINGMASTER</p>
             </div>
         </div>
     </main>
-
+    <footer>
+        <div class="container">
+            <div class="copyright"><span>Valve Corporation &copy; 2024</span></div>
+        </div>
+        <div id="logos">
+            <img id="logovalve" src="source/valve_logo.png" alt="valve">
+            <img id="logodota" src="source/dota_footer_logo.png" alt="dota">
+        </div>
+    </footer>
     <script>
+        $('#playbutton').on('click', function(){
+            document.location.href = "https://store.steampowered.com/app/570/Dota_2/";
+        })
+
         $('.nav-toggle').on('click', function(){
             $('#menu').toggleClass('active');
             let menu = document.getElementById('menu');
