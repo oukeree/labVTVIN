@@ -13,19 +13,53 @@
     <header>
         <nav class="container">
             <a class="logo" href="index.html" title="На главную">
-                <span>?</span>
+                <img src="source/icon.png">
             </a>
-            <div class="nav-toogle"><span></span></div>
+            <div class="nav-toggle"><span></span></div>
             <form action="" method="get" id="searchform">
                 <input type="text" placeholder="Search...">
-                <button type="submit"><i class="fa fa-search"></i></button>
+                <!-- <button type="submit"></button> -->
             </form>
             <ul id="menu">
-                <li><a href="">something</a></li>
-                <li><a href="">something</a></li>
-                <li><a href="">something</a></li>
+                <li><a href="">О игре</a></li>
+                <li><a href="">Новости</a></li>
+                <li><a href="">Как играть</a></li>
             </ul>
         </nav>
     </header>
+    <main>
+        <div class="banner">
+            <img src="source/dota-2-banner.jpg">
+            <p>«Современный многопользовательский шедевр»</p>
+            <div id="playbutton"><a>Play now</a><p>Download in steam</p></div>
+        </div>
+        <div id="aboutgame">
+            <p>Каждый день миллионы игроков по всему миру вступают в командную битву 5 на 5 в роли одного из более чем сотни героев.
+            Dota — глубочайшая многопользовательская стратегия всех времён, в которой всегда найдётся место новой стратегии или тактике.
+            Она совершенно бесплатна, и это не поменяется — начинайте защищать своего Древнего уже сейчас.</p>
+        </div>
+        <div id="heroes">
+            <h1>Кого <span>выберите</span>?</h1>
+            <div class="flexblock">
+                <p>
+                    Список героев в Dota 2 огромен и безгранично разнообразен: здесь вы встретите и магов-тактиков, и свирепых громил, 
+                    и хитроумных негодяев. Их невероятные способности и сокрушительные ульты непременно приведут вас к победе.
+                </p>
+                <img src="source/spirits.png">
+            </div>
+        </div>
+    </main>
+
+    <script>
+        $('.nav-toggle').on('click', function(){
+            $('#menu').toggleClass('active');
+            let menu = document.getElementById('menu');
+            if(menu.classList == 'active'){
+                menu.style.maxWidth = "100%";
+            } else {
+                menu.style.maxWidth = '0';
+            }
+        });
+    </script>
 </body>
 </html>
