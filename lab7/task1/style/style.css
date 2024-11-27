@@ -59,7 +59,6 @@ header::after, .container::after, .footer::after{
 header{
     width: 100%;
     background: #20212B;
-    /* background: black; */
     box-shadow: 3px 3px 1px rgba(0,0,0,.05);
     position: relative;
     padding: 15px 0;
@@ -130,17 +129,6 @@ header{
     color: white;
 }
 
-/* #searchform button{
-    background: transparent;
-    height: 40px;
-    border: none;
-    position: absolute;
-    z-index: 6;
-    right: 10px;
-    cursor: pointer;
-    font-size: 18px;
-    color: #FF7055;
-} */
 
 #searchform input:focus{
     font-style: normal;
@@ -209,13 +197,8 @@ header{
     color: #ffffffee;
     text-transform: uppercase;
     text-shadow: 0px 0px 20px #000;
-    /* text-transform: uppercase;
-    font-size: 30px;
-    color:white;
-    margin: 30px; */
 }
 #playbutton{
-    /* text-align: center; */
     cursor: pointer;
     margin: 50px;
     width: 400px;
@@ -255,7 +238,6 @@ header{
 #aboutgame{
     text-align: center;
     margin-top: 30px;
-    /* max-width: 1000px; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -263,9 +245,7 @@ header{
 }
 
 #aboutgame h1{
-    /* position: ab; */
     font-family: 'AlbertusNova';
-    /* font-family: ''; */
     text-align: center;
     margin: 5px;
     padding: 50px;
@@ -273,24 +253,17 @@ header{
     letter-spacing: 0px;
     line-height: 85%;
     text-transform: uppercase;
-    /* font-weight: 600; */
-    /* color: #E75654; */
     color: white;
     text-shadow: 0px 0px 20px #000; 
 }
 #aboutgame h1 span{
-    /* color: #ababaa; */
     color: #E2DACE90;
-    /* color: #E75654; */
     font-size: 60px;
     margin-bottom: 0;
 }
 
 #aboutgame p{
-    
-    /* font-family: "Radiance", "Noto Sans", sans-serif; */
     font-family: 'AlbertusNovaLight', serif;
-    /* font-family: ''; */
     text-align: center;
     margin: 5px;
     padding: 50px;
@@ -298,14 +271,10 @@ header{
     font-size: 30px;
     letter-spacing: 0px;
     line-height: 115%;
-    /* font-weight: 600; */
     color: white;
     text-shadow: 0px 0px 20px #000; 
 }
 
-#heroes{
-
-}
 #heroes h1{
     text-align: center;
     margin-left: 50px;
@@ -354,7 +323,6 @@ header{
 }
 #newstitle{
     font-family: 'AlbertusNova';
-    /* font-family: ''; */
     text-align: center;
     margin: 5px;
     padding: 50px;
@@ -362,13 +330,11 @@ header{
     letter-spacing: 0px;
     line-height: 85%;
     text-transform: uppercase;
-    /* font-weight: 600; */
-    /* color: #E75654; */
     color: white;
     text-shadow: 0px 0px 20px #000; 
 }
 
-#new1 img{
+#news img{
     width: 350px;
     height: 200px;
     margin: 23px;
@@ -377,9 +343,8 @@ header{
 }
 
 
-#new1{
+#news div{
     background-color: #813B3F;
-    margin-right: 50px;
     height: 320px;
     width: 400px;
     border: 3px solid #1E202A;
@@ -397,12 +362,10 @@ header{
     border: 3px solid darkgray;
     border-radius: 8px;
 }
-#new1 p{
+#news p{
     font-family: 'AlbertusNovaLight';
     text-align: center;
     margin: 5px;
-    /* padding-top: 100px;
-    padding-left: 30px; */
     font-size: 30px;
     letter-spacing: 1px;
     line-height: 115%;
@@ -417,36 +380,11 @@ header{
     font-style: 'AlbertusNova';
 }
 #new2 p{
-    font-family: 'AlbertusNovaLight';
-    text-align: center;
-    margin: 5px;
-    /* padding-top: 100px; */
-    /* padding-left: 30px; */
     font-size: 25px;
-    letter-spacing: 1px;
-    line-height: 115%;
-    font-weight: 100;
-    color: #f4f4ef;
-    text-shadow: 0px 0px 20px #000;
-}
+} 
 #new2{
-    background-color: #813B3F;
     margin-left: 50px;
-    height: 320px;
-    width: 400px;
-    
-    border: 3px solid #1E202A;
-    border-radius: 10px;
-    box-shadow: 0px 0px 20px #000;
-    cursor: pointer;
-}
-#new2 img{
-    width: 350px;
-    height: 200px;
-    margin: 23px;
-    border: 2px solid #E75654;
-    box-shadow: 0px 0px 20px #000;
-}
+} 
 
 /* footer */
 
@@ -482,9 +420,7 @@ footer{
 
 @media (max-width: 768px) {
     #news{
-        /* margin-top: 50px; */
         display: block;
-        /* justify-content: center; */
     }
     #newstitle{
         font-size: 75px;
