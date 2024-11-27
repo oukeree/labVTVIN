@@ -70,11 +70,13 @@ header{
     position: absolute;
     display: block;
     float: left;
+    
 }
 
 .logo img{
     width: 50px;
     height: 50px;
+    
 }
 
 #menu{
@@ -111,12 +113,14 @@ header{
     margin-left: 46px;
     display: inline-block;
     position: relative;
+    
 }
 
 #searchform input{
     width: 170px;
     float: left;
     border: none;
+    border: 2px solid #E75654;
     border-radius: 20px;
     background-color: #67343A;
     overflow: hidden;
@@ -124,15 +128,19 @@ header{
     padding-left: 10px;
     height: 40px;
     font-size: 16px;
-    font-style: italic;
-    font-family: Arial, Helvetica, sans-serif;
+    /* font-style: italic; */
+    font-family: 'AlbertusNovaThin';    
+    /* font-family: Arial, Helvetica, sans-serif; */
     color: white;
+    
+    box-shadow: 0px 0px 0px #000 ;
 }
 
 
 #searchform input:focus{
+    
     font-style: normal;
-    outline: 2px solid #0F595E;
+    /* outline: 2px solid #0F595E; */
 }
 
 .nav-toggle{
