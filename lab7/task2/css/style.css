@@ -1,0 +1,183 @@
+/* roboto-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/roboto-v32-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* roboto-italic - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Roboto';
+    font-style: italic;
+    font-weight: 400;
+    src: url('../fonts/roboto-v32-latin-italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* roboto-500 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/roboto-v32-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* roboto-900 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    src: url('../fonts/roboto-v32-latin-900.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: #006450;
+}
+
+body{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: normal;
+    color: #006450;
+}
+
+.header{
+    width: 100%;
+    height: 55px;
+    /* display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between; */
+}
+
+.header__list{
+
+    display: inline;
+    /* flex-wrap: nowrap; */
+}
+
+.header__item{
+    display: inline;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 300%;
+    text-align: center;
+    color: #006450;
+    margin-top: 2px;
+}
+.header__left{
+    float: left;
+}
+#menu1{
+    margin-left: 26px;
+    margin-top: 5px;
+}
+#menu2{
+    margin-left: 39px;
+    margin-right: 24px;
+    margin-top: 18px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 143%;
+    letter-spacing: 0.03em;
+    color: #006450;
+}
+#menu3{
+    margin-top: 18px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 133%;
+    letter-spacing: 0.03em;
+    color: #006450;
+}
+#menu4{
+    margin-right: 25px;
+    margin-top: 19px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0.03em;
+    color: #006450;
+}
+#menu5{
+    margin-right: 42px;
+    margin-top: 19px;
+    margin-left: 27px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 107%;
+    letter-spacing: 0.03em;
+    color: #006450;
+}
+#menu6{
+    /* margin-top: 19px; */
+}
+.header__right{
+    float: right;
+}
+
+.main{
+    margin-top: 0;
+}
+.main__big{
+    position: relative;
+    height: 1082px;
+}
+
+.big__img{
+    position: absolute;
+    /* Frame */
+    width: 100%;
+    /* position: absolute; */
+    /* height: 9090px; */
+    /* left: -0.14%; */
+    /* right: 0.14%; */
+    z-index: -1;
+    /* top: 56px; */
+
+
+}
+.big__buy{
+    display: flex;
+    flex-wrap: nowrap;
+}
+.big__main__text{
+
+    width: 1100px;
+}
+.big__text{
+    margin-top: 156px;
+    margin-left: 25px;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 122%;
+    letter-spacing: 0.01em;
+    color: #fffaef;
+}
+.big__button{
+    margin-top: 170px;
+    margin-left: 119px;
+    /* text-align: center; */
+    /* float: right; */
+    width: 201px;
+    height: 64px;
+    background-color: #e1ff32;
+}
+.big__button__text{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 356%;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #000;
+}
