@@ -181,3 +181,21 @@ body{
     text-align: center;
     color: #000;
 }
+.boxes{
+    display: flex;
+    position: absolute;
+    left: 1450px;
+    top: 900px;
+}
+.box:not(:last-child){
+    margin-right: 6px;
+}
+
+.box:not(:first-child):not(:last-child){
+    background-color: #fffaef       ;
+}
+.box{
+    border: 1px solid #fffaef;
+    width: 12px;
+    height: 12px;
+}
