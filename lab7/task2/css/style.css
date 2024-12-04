@@ -192,7 +192,7 @@ body{
 .boxes{
     display: flex;
     position: absolute;
-    left: 1450px;
+    left: 1405px;
     top: 900px;
 }
 .box:not(:last-child){
